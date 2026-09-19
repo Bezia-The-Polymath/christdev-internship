@@ -1,0 +1,24 @@
+body {
+  background-color: blanchedalmond;
+}
+/* An id is more powerful than a class so it overwrites it */
+#p1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+/* same feature update applied below overwrites what is above */
+p {
+  color: rgb(103, 10, 10);
+}
+.div1 {
+  background-color: aliceblue;
+  color: black;
+  padding: 2em;
+  border-radius: 1em;
+  max-width: 300px;
+  margin-top: -40px;
+  z-index: 99;
+}

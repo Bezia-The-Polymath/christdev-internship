@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div class="input">
+        <label for="">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          minlength="3"
+          maxlength="10"
+          placeholder="Enter your name"
+        />
+      </div>
+      <input type="submit" value="Submit" />
+
+      <div class="input">
+        <label for="">Phone:</label>
+        <input
+          type="text"
+          id="Phone"
+          name="phone"
+          minlength="9"
+          maxlength="13"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <input type="submit" value="Submit" />
+
+      <div class="course">
+        <label for="">Course:</label>
+        <select name="course" id="course">
+          <option value="web-development">Web Development</option>
+          <option value="data-science">Data Science</option>
+          <option value="ux-design">UX Design</option>
+        </select>
+      </div>
+
+      <div class="textarea">
+        <label for="">What do you want from us?</label>
+        <textarea
+          id="Purpose"
+          name="purpose"
+          minlength="10"
+          placeholder="Enter your purpose"
+        >
+        </textarea>
+      </div>
+      <!-- <input type="submit" value="Submit"/> -->
+
+      <div class="radio">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" checked />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+      </div>
+      <input type="color" name="" id="" value="#000000" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

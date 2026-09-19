@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <h2>Student Information</h2>
+
+    <form action="post">
+      <div class="input">
+        <label for="">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          minlength="3"
+          maxlength="10"
+          placeholder="Enter your name"
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="">Phone:</label>
+        <input
+          type="text"
+          id="Phone"
+          name="phone"
+          minlength="9"
+          maxlength="13"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="">Email:</label>
+        <input
+          type="text"
+          id="Email"
+          name="Email"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <br />
+
+      <div class="date">
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="Date" id="dob" />
+      </div>
+      <br />
+      <div>
+        <label for="course"
+          >Course(Choose the course that best describes the your needs):</label
+        >
+        <select name="course" id="course">
+          <option value="Web Development">Web Development</option>
+          <option value="Graphic Design">Graphic Design</option>
+          <option value="IT Consulting">IT Consulting</option>
+          <option value="Software Development">Software Development</option>
+          <option value="Mobile App Development">Mobile App Development</option>
+          <option value="Web App Development">Web App Development</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <br />
+      <div class="textarea">
+        <label for="comment">Additional Comments: </label>
+        <textarea
+          type="textarea"
+          id="comment"
+          name="comment"
+          placeholder=""
+        ></textarea>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

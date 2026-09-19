@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChristDev Internship Registration Form</title>
+  </head>
+  <body>
+    <h1>ChristDev Internship Registration Form</h1>
+    <h2>Personal Information</h2>
+
+    <form action="" method="get">
+      <div class="input">
+        <label for="fullName">Full Name:</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullname"
+          minlength="3"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          minlength="3"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          minlength="9"
+          maxlength="13"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input
+          type="date"
+          id="dateOfBirth"
+          name="dateOfBirth"
+          placeholder="Enter your date of birth"
+        />
+      </div>
+      <div class="radio">
+        <p>Gender:</p>
+        <label for="male">male:</label>
+        <input type="radio" id="Male" name="gender" />
+        <label for="female">female:</label>
+        <input type="radio" id="Female" name="gender" />
+      </div>
+
+      <h2>Education</h2>
+      <div class="input">
+        <label for="school">School/University</label>
+        <input type="text" id="school" name="school" />
+      </div>
+      <br />
+      <div class="input">
+        <label for="programme">Programme:</label>
+        <input type="text" id="programme" name="programme" />
+      </div>
+      <br />
+      <div class="level">
+        <label for="level">Level:</label>
+        <select type="" id="level" name="level">
+          <option value="200">200</option>
+          <option value="300">300</option>
+          <option value="400">400</option>
+          <option value="500">500</option>
+        </select>
+      </div>
+
+      <h2>Technical Information</h2>
+      <div class="input">
+        <label for="beginner">Skill Level: Beginner </label>
+        <input type="radio" id="beginner" name="SkillLevel" />
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="intermediate" name="SkillLevel" />
+        <label for="expert">Expert</label>
+        <input type="radio" id="expert" name="SkillLevel" />
+      </div>
+
+      <h2>Internship Information</h2>
+      <div class="input">
+        <label for="web development">Interest: Web Development</label>
+        <input type="checkbox" name="interest" id="Interest" />
+        <label for="Mobile development">Mobile Development</label>
+        <input type="checkbox" value="mobile-development" />
+        <label for="Backend development">Backend Development</label>
+        <input type="checkbox" value="backend-development" />
+        <label for="UI/UX">UI/UX</label>
+        <input type="checkbox" value="UI/UX" />
+        <label for="AI">AI</label>
+        <input type="checkbox" value="AI" />
+      </div>
+      <p class="textarea">
+        <label for="techKnown">Technologies Already Known:</label>
+        <textarea
+          id="techKnown"
+          name="techKnown"
+        >
+      </textarea>
+      </p>
+      <div class="textarea">
+        <label for="">Internship Goals:</label>
+        <textarea
+          id="Goals"
+          name="goals"
+          minlength="10"
+          placeholder="My internship goals"
+        >
+        </textarea>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+      <br /><br />
+      <div>
+        <input type="checkbox" id="confirm" />Confirm
+        <!-- <label for="confirm">Confirm</label> -->
+      </div>
+    </form>
+  </body>
+</html>

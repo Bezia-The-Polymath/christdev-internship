@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChristDev Digital Academy</title>
+  </head>
+  <body>
+    <h1>ChristDev Digital Academy</h1>
+    <h2>Contact Form</h2>
+
+    <form action="" method="get">
+      <div class="input">
+        <label for="">Full Name:</label>
+        <input
+          type="text"
+          id="FullName"
+          name="fullname"
+          minlength="3"
+          placeholder="Enter your full name"
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="">Email:</label>
+        <input
+          type="text"
+          id="Email"
+          name="Email"
+          minlength="3"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <br />
+      <div class="input">
+        <label for="">Phone:</label>
+        <input
+          type="text"
+          id="Phone"
+          name="phone"
+          minlength="9"
+          maxlength="13"
+          placeholder="Enter your phone number"
+        />
+      </div>
+      <br />
+      
+      <div class="textarea">
+        <label for="">What do you want from us?</label>
+        <textarea
+          id="Purpose"
+          name="purpose"
+          minlength="10"
+          placeholder="Enter your purpose"
+        >
+        </textarea>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+      <br /><br />
+    </form>
+    <h1>Tables</h1>
+    <table border="1">
+        <thead>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Fees</th>
+        </thead>
+        <tr>
+            <td rowspan="2">HTML & CSS</td>
+            <td>6 weeks</td>
+            <td>$199</td>
+        </tr>
+        <tr>
+            <!-- <td>JavaScript</td> -->
+            <td colspan="1">8 weeks</td>
+            <td>$249</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>10 weeks</td>
+            <td>$299</td>
+        </tr>
+    </table>
+  </body>
+</html>

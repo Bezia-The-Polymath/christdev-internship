@@ -1,0 +1,102 @@
+:root {
+  --flexGap: 20px;
+}
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  40% {
+    background-color: purple;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes colorchange {
+  0% {
+    color: white;
+  }
+  33% {
+    color: black;
+  }
+  66% {
+    color: yellow;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.section {
+  padding: 2em;
+  background: url("../media/WIN_20260907_16_51_19_Pro.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+.section h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 16px black;
+  text-align: center;
+}
+.circlescontainer {
+  display: flex;
+  gap: var(--flexGap);
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.circlescontainer > .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  min-height: 20px;
+}
+.circle {
+  animation: infinite 2s colorChange ease-in-out;
+}
+.circle3:hover {
+  animation: bounce 0.5s ease-in 2;
+}
+.ani {
+  animation: infinite 3s colorchange ease-in-out;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  min-height: 20px;
+  animation: roll 2s ease infinite alternate;
+}
+/* website: animate.css */

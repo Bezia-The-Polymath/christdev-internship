@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+/* fullstop always infront of classes */
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear-float {
+  clear: left;
+}
+.third {
+  max-width: 33.3%;
+}
+.capture {
+  padding: 0em 1em 0em 0em;
+  border: 10px blue;
+  /* background-color: aqua; */
+}
+.card {
+  min-width: 300px;
+  max-width: 300px;
+  background-color: rgb(246, 244, 240);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.card h2 {
+  margin: 5px 0;
+}
+.card p {
+  margin: 5px 0;
+}
+.container {
+  background: linear-gradient(180deg, rgb(237, 226, 226), rgba(0, 0, 255, 0.365));
+  box-shadow: #e91313;
+  max-width: min(90%, 1200px);
+  margin: 50px auto;
+}
+.flexible{
+  display: flex;
+  /* overflow-x: scroll; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap-reverse;
+}
+.full-height{
+  min-height: 100vh;
+}
