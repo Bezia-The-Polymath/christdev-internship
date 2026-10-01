@@ -1,0 +1,12 @@
+.para{
+     background-color: blue;
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     color: red;
+    
+}
+
+.fade{
+    display: none;
+}
