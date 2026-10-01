@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <div id="name"></div>
+    <div class="input">
+      <label for="name">Name</label>
+      <input type="text" name="name" oninput="changeName(this.value)" />
+    </div>
+    <input type="number" id="number1" value="0" oninput="adder()">+<input type="number" id="number2" value="0" oninput="adder()"> = <span id="sum"></span>
+  <br>
+
+  <!-- ASSIGNMENT -->
+
+  <label for="parameters">Area: Length</label>
+    <input type="number" id="length" value="0" oninput="area()">* <label for="parameters">Width</label><input type="number" id="width" value="0" oninput="area()"> = <span id="mul"></span>
+  </body>
+  <script src="functions.js"></script>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 97vh;
+    width: 100vw;
+}
+
+#screen{
+    width: 90%;
+    height: 80%;
+    background: linear-gradient(rgb(21, 34, 19), rgb(37, 20, 20));
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shape{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+}
+
+.circle{
+    border-radius: 50%;
+    top: calc(100% - 50px);
+    left: calc(50% - 50px);
+}
+
+.hide{
+    display: none;
+}
