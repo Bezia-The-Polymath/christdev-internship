@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+            height: 100px;
+            width: 100px;
+            margin-top: -4em;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgb(112, 106, 106);
+        }
+        #pple {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 70px 20px;
+            padding-top: 4em;
+        }
+        #pple>* {
+            box-shadow: 8px 5px 5px 6px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            gap: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="pple"></div>
+</body>
+<script src="objects.js"></script>
+</html>
