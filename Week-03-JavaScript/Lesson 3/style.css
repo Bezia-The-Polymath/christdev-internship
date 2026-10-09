@@ -1,0 +1,277 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    height: 50px;
+    background-color: #29282e;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+
+    padding: 0 30px;
+}
+
+
+/* Individual information item */
+
+.top-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+/* Icons in top bar */
+
+.top-item i {
+    font-size: 18px;
+    color: white;
+}
+
+
+/* ================= MAIN HEADER ================= */
+
+.main-header {
+    height: 140px;
+
+    /*
+       This creates a light textured-looking background.
+       You can replace it with the actual ChristDev background image.
+    */
+    background:
+        linear-gradient(
+            rgba(235, 235, 235, 0.92),
+            rgba(235, 235, 235, 0.92)
+        ),
+        url("images/header-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main content inside header */
+
+.header-container {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo img {
+    width: 100px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* ================= HEADER BUTTONS ================= */
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+/* Individual button */
+
+.header-button {
+    height: 54px;
+
+    background-color: #242832;
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover effect */
+
+.header-button:hover {
+    background-color: #111318;
+}
+
+
+/* Button icon */
+
+.button-icon {
+    width: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-icon i {
+    font-size: 30px;
+}
+
+
+/* Button text */
+
+.button-text {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 5px;
+}
+
+
+.button-text strong {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.button-text span {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+.menu{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto -25px auto;
+    gap: 20px;
+    justify-content: space-around;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu a{
+    color: #111318;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: normal;
+    /* margin: auto; */
+}
+
+.menu a:hover{
+    color: #f90b0b;
+    background-color: #000000;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media screen and (max-width: 1000px) {
+
+    .top-bar {
+        gap: 15px;
+    }
+
+    .top-item {
+        font-size: 12px;
+    }
+
+    .header-container {
+        padding: 0 30px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .top-bar {
+        height: auto;
+        padding: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .main-header {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-button {
+        width: 230px;
+    }
+
+
+}
+
+@media screen and (max-width: 412px){
+    #mobile-toggle{
+        display block;
+    }
+
+    #mobile-toggle button{
+        display: none;
+    }
+
+    #mobile-toggle button.active{
+        display: block;
+    }
+
+.menu,
+.menu-container{
+    display: none;
+}
+}
+
